@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>YUMMY FAM-Item Add</title>
+    <link href="asserts/css/bootstrap.css" rel="stylesheet">
+    <link href="asserts/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-brand bg-white" style="width: 1347px">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="asserts/img/yummy.jpg"><blue>YUMMY FAM</blue></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="dashboard.html"><home>Home</home></a>
+                </li>
+
+
+                <a href="">
+                    <img alt="" class="me-4" src="asserts/img/serach.png"
+                         style="width: 30px;height: 30px;right:320px;position: absolute">
+                </a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"style="position: absolute;right: 100px;width: 230px;">
+                    <button class="btn btn-outline-success" type="submit"style="position: absolute;right: 30px">Search</button>
+                </form>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--img-->
+<img  alt="" class="img-fluid   vh-100" style="width: 1347px; position: absolute" src="asserts/img/ite.jpg">
+
+<!--            title-->
+<h1 class="text-center modal-title  " style="color:  #e6e1ec;top: 111px;position: absolute;right: 465px;; font-weight: bold; font-size: 80px">Food</h1>
+
+
+<!--      save grid-->
+<div class="d-block" style="max-width: 700px; height:584px;  background:#2e597b ;
+position: absolute;top:142px; left:41px; width: 526px; ">
+    <form>
+        <div class="mb-3 w-25 " style="padding-left: 40px;color: white; font-weight: bold; padding-top: 15px;" >
+            <label for="InputIDx" class="form-label">ID</label>
+            <input type="ID" class="form-control" id="InputIDx">
+
+        </div>
+        <div class="mb-3 w-50 " style="padding-left: 40px; color: white; font-weight: bold; padding-top: 15px;" >
+            <label for="InputName" class="form-label">Food Name</label>
+            <input type="name" class="form-control" id="InputName">
+        </div>
+        <div class="mb-3 w-75 " style="padding-left: 40px; color:white;font-weight:bold;padding-top: 15px;" >
+            <label for="InputType" class="form-label">Food Type</label>
+            <input type="type" class="form-control" id="InputType">
+        </div>
+        <div class="mb-3 w-75 " style="padding-left: 40px; color:white;font-weight:bold;padding-top: 15px;" >
+            <label for="InputQty" class="form-label">Qty</label>
+            <input type="qty" class="form-control" id="InputQty">
+        </div>
+        <div class="mb-3 w-75 " style="padding-left: 40px; color:white;font-weight:bold;padding-top: 15px;" >
+            <label for="InputPrice" class="form-label">Price</label>
+            <input type="type" class="form-control" id="InputPrice">
+        </div>
+
+
+
+        <!--search-->
+        <div class="mb-3  " style="left: 306px;position: absolute; color:white;font-weight:bold;top:46px;width: 52px;" >
+            <input type="id" class="form-control" id="InputID">
+            <button class="btn " type="button " style="width: 165px; position: absolute; left: 53px; top: 0px;background: yellow;font-weight: bold">Search Food</button>
+        </div>
+
+        <!--save.dalete/update-->
+        <button class="btn btn-success" type="button " style="width: 140px; position: absolute; left: 30px;top:522px;">Save Food</button>
+        <button class="btn btn-danger" type="button" style="width: 100px;position: absolute; width: 100px; position: absolute; left: 204px; top:522px;">Delete</button>
+        <button class="btn" type="button " style="width: 100px; position: absolute; background: orange; color: white; font-weight: bold;left: 344px;top:522px;">Edit</button>
+    </form>
+</div>
+
+
+<table class="table table-bordered table-hover w-50 "  style="position: absolute; color: white;  left: 675px; top: 333px;
+background: #2e597b ">
+
+    <thead style="background:#0f2a40 ">
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Food Name</th>
+        <th scope="col">Type of the food</th>
+        <th scope="col">QTY</th>
+        <th scope="col">Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>pizza</td>
+        <td>Food</td>
+        <td>10</td>
+        <td>rs.100</td>
+
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Sup</td>
+        <td>Hot Drinks</td>
+        <td>200</td>
+        <td>rs.3000</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>fruit salad</td>
+        <td>desert</td>
+        <td>50</td>
+        <td>rs.200</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Ice Coffe</td>
+        <td>Cool Drinks</td>
+        <td>300</td>
+        <td>rs.300</td>
+    </tr>
+
+
+    </tbody>
+</table>
+
+
+
+<script src="assests/js/bootstrap.js"></script>
+
+</body>
+</html>

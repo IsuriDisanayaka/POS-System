@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>YUMMY FAM-Customer Add</title>
+    <link href="asserts/css/bootstrap.css" rel="stylesheet">
+    <link href="asserts/style.css" rel="stylesheet">
+
+</head>
+<body style="background: #e8dbea;">
+
+<nav class="navbar navbar-expand-lg navbar-brand bg-white" style="width: 1347px">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="asserts/img/yummy.jpg"><blue>YUMMY FAM</blue></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="dashboard.html"><home>Home</home></a>
+                </li>
+
+
+            <a href="">
+                <img alt="" class="me-4" src="asserts/img/serach.png"
+                     style="width: 30px;height: 30px;right:320px;position: absolute">
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"style="position: absolute;right: 100px;width: 230px;">
+                <button class="btn btn-outline-success" type="submit"style="position: absolute;right: 30px">Search</button>
+            </form>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--img-->
+<img  alt="" class="img-fluid   vh-100" style="width: 1347px; position: absolute" src="asserts/img/customer.jpg">
+
+<!--            title-->
+<h1 class="text-center modal-title  " style="color: #690d4d;position: absolute;
+right: 157px; font-weight: bold; font-size: 65px"> Customer</h1>
+
+
+<!--      save grid-->
+    <div class="d-block" style="max-width: 700px; height:514px;  background:#a05353 ;
+position: absolute;top:142px; left:41px; width: 526px; ">
+<form>
+    <div class="mb-3 w-25 " style="padding-left: 40px;color: white; font-weight: bold; padding-top: 15px;" >
+        <label for="InputIDx" class="form-label">ID</label>
+        <input type="ID" class="form-control" id="InputIDx">
+
+    </div>
+    <div class="mb-3 w-50 " style="padding-left: 40px; color: white; font-weight: bold; padding-top: 15px;" >
+        <label for="InputName" class="form-label">Customer Name</label>
+        <input type="name" class="form-control" id="InputName">
+    </div>
+    <div class="mb-3 w-75 " style="padding-left: 40px; color:white;font-weight:bold;padding-top: 15px;" >
+        <label for="InputAddress" class="form-label">Customer Address</label>
+        <input type="address" class="form-control" id="InputAddress">
+    </div>
+    <div class="mb-3 w-75 " style="padding-left: 40px; color: white; font-weight: bold;padding-top: 15px;" >
+        <label for="InputPhone" class="form-label">Customer Phone Number</label>
+        <input type="email" class="form-control" id="InputPhone" aria-describedby="phoneHelp">
+        <div id="phoneHelp" class="form-text" style="color: white">We'll never share your phone number with anyone else.</div>
+    </div>
+
+
+<!--search-->
+    <div class="mb-3  " style="left: 306px;position: absolute; color:white;font-weight:bold;top:46px;width: 52px;" >
+        <input type="id" class="form-control" id="InputID">
+        <button class="btn " type="button " style="width: 165px; position: absolute; left: 53px; top: 0px;background: yellow;font-weight: bold">Search Customer</button>
+    </div>
+
+<!--save.dalete/update-->
+    <button class="btn btn-success" type="button " style="width: 140px; position: absolute; left: 30px;top:470px;">Save Customer</button>
+    <button class="btn btn-danger" type="button" style="width: 100px;position: absolute; width: 100px; position: absolute; left: 204px; top:470px;">Delete</button>
+    <button class="btn" type="button " style="width: 100px; position: absolute; background: orange; color: white; font-weight: bold;left: 344px;top:470px;">Edit</button>
+</form>
+</div>
+
+
+<table class="table table-bordered table-hover w-50 "  style="position: absolute; color: white;  left: 675px; top: 333px;
+background: #a05353; ">
+
+    <thead style="background:#6b2121 ">
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Contact</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Kamal</td>
+        <td>Galle</td>
+        <td>0712987654</td>
+
+
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Kamal</td>
+        <td>Galle</td>
+        <td>0712987654</td>
+
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Kamal</td>
+        <td>Galle</td>
+        <td>0712987654</td>
+
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Kamal</td>
+        <td>Galle</td>
+        <td>0712987654</td>
+
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td>Kamal</td>
+        <td>Galle</td>
+        <td>0712987654</td>
+
+
+    </tr>
+
+
+    </tbody>
+</table>
+
+
+
+<script src="assests/js/bootstrap.js"></script>
+
+</body>
+</html>
