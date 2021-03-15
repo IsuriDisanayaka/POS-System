@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>YUMMY FAM</title>
+    <link href="asserts/css/bootstrap.css" rel="stylesheet">
+    <link href="asserts/style.css" rel="stylesheet">
+</head>
+<body >
+<nav class="navbar navbar-expand-lg navbar-brand bg-white">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="asserts/img/yummy.jpg"><blue>YUMMY FAM</blue></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="home"><home>Home</home></a>
+                </li>
+
+                <!--                //customer-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="CustomerScrollingDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <item> Customer</item>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="CustomerScrollingDropdown">
+                        <li ><a class="dropdown-item" href="#" id="inputSaveCustomer">Add Customer</a></li>
+                        <li><a class="dropdown-item" href="#" id="ShowCustomer">All Customer</a></li>
+
+                    </ul>
+                </li>
+
+                <!--                //Item-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ItemScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <item>Item</item>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="ItemScrollingDropdown">
+                        <li><a class="dropdown-item" href="#" id="inputSaveItem">Add Food</a></li>
+                        <li><a class="dropdown-item" href="#" id="showItem">All Food </a></li>
+
+                    </ul>
+                </li>
+                <!--                //Item&ndash;&gt;-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="OrderScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <item>Order</item>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="ItemScrollingDropdown">
+                        <li><a class="dropdown-item" href="#" id="inputOrder">Add Order</a></li>
+                        <li><a class="dropdown-item" href="#" id="showOrder">All Order</a></li>
+
+                    </ul>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>-->
+                <!--                </li>-->
+            </ul>
+            <a href="">
+                <img alt="" class="me-4" src="asserts/img/serach.png"
+                     style="width: 30px;height: 30px;">
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--dashboard-->
+<main style="height: 587px" id="dash">
+<!--nav-->
+
+<img  alt="" class="img-fluid   " style="width: 1367px; position: absolute ;height:587px" src="asserts/img/main.jpg">
+<!--            title-->
+<h1 class="text-center modal-title  " style="color: #f3ebed;position: absolute;
+right: 454px; font-weight: bold; font-size: 65px">Today Special</h1>
+<div>
+<div class="list-group" style="background: black; width: 175px;position: absolute; top: 144px;left: 49px;">
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true"style="background: black">
+        Food
+    </a>
+    <a href="#" class="list-group-item list-group-item-action" id="viewRice">Fried rice</a>
+    <a href="#" class="list-group-item list-group-item-action"id="viewOthers">Others</a>
+</div>
+<div class="list-group" style="background: black; width: 175px;position: absolute; top: 309px;left: 49px;">
+    <a href="#"  id="viewDrinks" class="list-group-item list-group-item-action active" aria-current="true" style="background: black">
+       Drinks
+    </a>
+</div>
+</div>
+
+<div class="col" style="height: 100px ;background: white">
+    <div class="card h-25" style=";width: 120px; top: 115px;left: 423px;background: green">
+        <img src="asserts/img/drinks/krushers.png" class="img-thumbnail" alt="krushers"style="height: 83px">
+        <h1 class="card-header text-center"style="color: #a3dc92;font-size: 20px">Krushers</h1>
+        <p class="card-body text-center"style="height: 10px;color: white">Rs.800 </p>
+        <button class="card-footer btn btn-danger"style="color: white;width: 120px;top:10px">Select</button>
+    </div>
+
+    <div class="card h-25" style=";width: 130px; top: 89px;left: 609px;background: green">
+        <img src="asserts/img/biryani.jpg" class="img-thumbnail" alt="Biryani" style="height: 85px"  >
+        <h1 class="card-header text-center"style="color: #a3dc92;font-size: 20px">Biryani</h1>
+        <p class="card-body text-center"style="height: 10px;color: white">Rs.800 </p>
+        <button class="card-footer btn btn-danger"style="color: white;width: 120px;top:10px">Select</button>
+    </div>
+
+    <div class="card h-25" style=";width: 120px; top: 63px;left: 795px;background: green">
+        <img src="asserts/img/cheese.jpg" class="img-thumbnail" alt="Chesse Balls"style="height:65px" >
+        <h1 class="card-header text-center"style="color: #a3dc92;font-size: 20px">Chesse Balls</h1>
+        <p class="card-body text-center"style="height: 10px;color: white">Rs.800 </p>
+        <button class="card-footer btn btn-danger"style="color: white;width: 120px;top:10px">Select</button>
+    </div>
+
+    <div class="card h-25" style=";width: 135px; top: 35px;left: 981px;background: green">
+        <img src="asserts/img/Kottu.jpg" class="img-thumbnail" alt="Kottu" style="height: 89px">
+        <h1 class="card-header text-center"style="color: #a3dc92;font-size: 20px">Kottu</h1>
+        <p class="card-body text-center"style="height: 10px ;color: white">Rs.800 </p>
+        <button class="card-footer btn btn-danger"style="color: white;width: 135px;top:10px">Select</button>
+    </div>
+
+    <div class="card h-25" style=";width: 120px;top:8px; left: 1175px;background: green">
+        <img src="asserts/img/crispy%20chicken.jpg" class="img-thumbnail" alt="Crispy chicken"style="height: 60px;">
+        <h1 class="card-header text-center"style="color: #a3dc92;font-size: 20px ;"> Crispy chicken</h1>
+        <p class="card-body text-center"style="height: 10px;color: white">Rs.800 </p>
+        <button class="card-footer btn btn-danger"style="color: white;width: 120px;top:10px;">Select</button>
+    </div>
+</div>
+
+<!--footter-->
+<div class="card text-center"style="position: absolute;bottom: 0 ;width: 1366px;height: 150px;background: black">
+
+    <div class="card-body" style="position: absolute;top: 21px;text-align: center; font-weight:bold;left: 0;right: 0;margin: auto ">
+        <h5 class="card-title"style="color: #90c2af">Yummy-Fam</h5>
+        <p class="card-text"style="color: #ebeef1;font-size: 22px">Enjoy your day!</p>
+    </div>
+    <div class="card-footer text-muted" style="position: absolute;top: 100px;text-align: center; left: 0;right: 0;margin: auto ;color: #f0f0f0">
+        Done by:ABD software company
+    </div>
+</div>
+
+</main>
+<!--savecust-->
+<main style="background: #e8dbea; " id="customerSave">
+
+
+    <!--img-->
+    <img  alt="" class="img-fluid   vh-100" style="width: 1347px; position: absolute" src="asserts/img/customer.jpg">
+
+    <!--            title-->
+    <h1 class="text-center modal-title  " style="color: #690d4d;position: absolute;
+right: 157px; font-weight: bold; font-size: 65px"> Customer</h1>
+
+
+    <!--      save grid-->
+    <div class="d-block" style="max-width: 700px; height:514px;  background:#a05353 ;
+position: absolute;top:142px; left:41px; width: 526px; ">
+        <form>
+            <div class="mb-3 w-25 " style="padding-left: 40px;color: white; font-weight: bold; padding-top: 15px;" >
+                <label for="InputIDx" class="form-label">ID</label>
+                <input type="ID" class="form-control" id="InputIDx">
+
+            </div>
+            <div class="mb-3 w-50 " style="padding-left: 40px; color: white; font-weight: bold; padding-top: 15px;" >
+                <label for="InputName" class="form-label">Customer Name</label>
+                <input type="name" class="form-control" id="InputName">
+            </div>
+            <div class="mb-3 w-75 " style="padding-left: 40px; color:white;font-weight:bold;padding-top: 15px;" >
+                <label for="InputAddress" class="form-label">Customer Address</label>
+                <input type="address" class="form-control" id="InputAddress">
+            </div>
+            <div class="mb-3 w-75 " style="padding-left: 40px; color: white; font-weight: bold;padding-top: 15px;" >
+                <label for="InputPhone" class="form-label">Customer Phone Number</label>
+                <input type="email" class="form-control" id="InputPhone" aria-describedby="phoneHelp">
+                <div id="phoneHelp" class="form-text" style="color: white">We'll never share your phone number with anyone else.</div>
+            </div>
+
+
+            <!--search-->
+            <div class="mb-3  " style="left: 306px;position: absolute; color:white;font-weight:bold;top:46px;width: 52px;" >
+                <input type="id" class="form-control" id="InputID">
+                <button class="btn " type="button " style="width: 165px; position: absolute; left: 53px; top: 0px;background: yellow;font-weight: bold">Search Customer</button>
+            </div>
+
+            <!--save.dalete/update-->
+            <button class="btn btn-success" type="button " style="width: 140px; position: absolute; left: 30px;top:470px;">Save Customer</button>
+            <button class="btn btn-danger" type="button" style="width: 100px;position: absolute; width: 100px; position: absolute; left: 204px; top:470px;">Delete</button>
+            <button class="btn" type="button " style="width: 100px; position: absolute; background: orange; color: white; font-weight: bold;left: 344px;top:470px;">Edit</button>
+        </form>
+    </div>
+
+
+    <table class="table table-bordered table-hover w-50 "  style="position: absolute; color: white;  left: 675px; top: 333px;
+background: #a05353; ">
+
+        <thead style="background:#6b2121 ">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Contact</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+
+        </tr>
+
+
+        </tbody>
+    </table>
+
+</main>
+<!--showCust-->
+<main id="AllCust">
+
+    <!--img-->
+    <img  alt="" class="img-fluid   vh-100" style="width: 1347px; position: absolute" src="asserts/img/cust.jpg">
+
+    <!--            title-->
+    <h1 class="text-center modal-title  " style="position: absolute ;color: #e43d00;
+font-size: 60px; left: 65px; font-weight: bold;"> Customer</h1>
+    <!--table-->
+
+
+    <table class="table table-bordered table-hover w-50 "  style="position: absolute; color: white;top: 0; left: 0;bottom: 0; right: 0; margin: auto;
+ background: #753822; ">
+
+        <thead style="background: #523227">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Contact</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td>Kamal</td>
+            <td>Galle</td>
+            <td>0712987654</td>
+
+        </tr>
+
+
+        </tbody>
+    </table>
+
+
+    <!--search-->
+</main>
+<!--showItem-->
+<main id="ItemSave">
+
+
+    <!--img-->
+    <img  alt="" class="img-fluid   vh-100" style="width: 1347px; position: absolute" src="asserts/img/ite.jpg">
+
+    <!--            title-->
+    <h1 class="text-center modal-title  " style="color:  #e6e1ec;top: 111px;position: absolute;right: 465px;; font-weight: bold; font-size: 80px">Food</h1>
+
+
+    <!--      save grid-->
+    <div class="d-block" style="max-width: 700px; height:584px;  background:#2e597b ;
+position: absolute;top:142px; left:41px; width: 526px; ">
+        <form>
+            <div class="mb-3 w-25 " style="padding-left: 40px;color: white; font-weight: bold; padding-top: 15px;" >
+                <label for="InputIID" class="form-label">ID</label>
+                <input type="ID" class="form-control" id="InputIID">
+
+            </div>
+            <div class="mb-3 w-50 " style="padding-left: 40px; color: white; font-weight: bold; padding-top: 15px;" >
+                <label for="InputIName" class="form-label">Food Name</label>
+                <input type="name" class="form-control" id="InputIName">
+            </div>
+            <div class="mb-3 w-75 " style="padding-left: 40px; color:white;font-weight:bold;padding-top: 15px;" >
+                <label for="InputType" class="form-label">Food Type</label>
+                <input type="type" class="form-control" id="InputType">
+            </div>
+            <div class="mb-3 w-75 " style="padding-left: 40px; color:white;font-weight:bold;padding-top: 15px;" >
+                <label for="InputQty" class="form-label">Qty</label>
+                <input type="qty" class="form-control" id="InputQty">
+            </div>
+            <div class="mb-3 w-75 " style="padding-left: 40px; color:white;font-weight:bold;padding-top: 15px;" >
+                <label for="InputPrice" class="form-label">Price</label>
+                <input type="type" class="form-control" id="InputPrice">
+            </div>
+
+
+
+            <!--search-->
+            <div class="mb-3  " style="left: 306px;position: absolute; color:white;font-weight:bold;top:46px;width: 52px;" >
+                <input type="id" class="form-control" id="InputIeID">
+                <button class="btn " type="button " style="width: 165px; position: absolute; left: 53px; top: 0px;background: yellow;font-weight: bold">Search Food</button>
+            </div>
+
+            <!--save.dalete/update-->
+            <button class="btn btn-success" type="button " style="width: 140px; position: absolute; left: 30px;top:522px;">Save Food</button>
+            <button class="btn btn-danger" type="button" style="width: 100px;position: absolute; width: 100px; position: absolute; left: 204px; top:522px;">Delete</button>
+            <button class="btn" type="button " style="width: 100px; position: absolute; background: orange; color: white; font-weight: bold;left: 344px;top:522px;">Edit</button>
+        </form>
+    </div>
+
+
+    <table class="table table-bordered table-hover w-50 "  style="position: absolute; color: white;  left: 675px; top: 333px;
+background: #2e597b ">
+
+        <thead style="background:#0f2a40 ">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Food Name</th>
+            <th scope="col">Type of the food</th>
+            <th scope="col">QTY</th>
+            <th scope="col">Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>pizza</td>
+            <td>Food</td>
+            <td>10</td>
+            <td>rs.100</td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Sup</td>
+            <td>Hot Drinks</td>
+            <td>200</td>
+            <td>rs.3000</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>fruit salad</td>
+            <td>desert</td>
+            <td>50</td>
+            <td>rs.200</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Ice Coffe</td>
+            <td>Cool Drinks</td>
+            <td>300</td>
+            <td>rs.300</td>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+
+</main>
+<!--addItem-->
+<main id="allItem">
+
+    <!--img-->
+    <img  alt="" class="img-fluid   vh-100" style="width: 1347px; position: absolute" src="asserts/img/cuv.jpg">
+
+    <!--            title-->
+    <h1 class="text-center modal-title  " style="position: absolute ;color:#5f0090;
+font-size: 60px; left: 65px; font-weight: bold;"> Item</h1>
+    <!--table-->
+
+
+    <table class="table table-bordered table-hover w-50 "  style="position: absolute; color: white;top: 0;
+ left: 0;bottom: 0; right: 0; margin: auto;
+ background:#302c52; ">
+
+        <thead style="background:#120d3e">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Food Name</th>
+            <th scope="col">Type of the food</th>
+            <th scope="col">QTY</th>
+            <th scope="col">Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>pizza</td>
+            <td>Food</td>
+            <td>10</td>
+            <td>rs.100</td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Sup</td>
+            <td>Hot Drinks</td>
+            <td>200</td>
+            <td>rs.3000</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>fruit salad</td>
+            <td>desert</td>
+            <td>50</td>
+            <td>rs.200</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Ice Coffe</td>
+            <td>Cool Drinks</td>
+            <td>300</td>
+            <td>rs.300</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>Ice Coffe</td>
+            <td>Cool Drinks</td>
+            <td>300</td>
+            <td>rs.300</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>pizza</td>
+            <td>Food</td>
+            <td>10</td>
+            <td>rs.100</td>
+
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td>Sup</td>
+            <td>Hot Drinks</td>
+            <td>200</td>
+            <td>rs.3000</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td>fruit salad</td>
+            <td>desert</td>
+            <td>50</td>
+            <td>rs.200</td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+            <td>Ice Coffe</td>
+            <td>Cool Drinks</td>
+            <td>300</td>
+            <td>rs.300</td>
+        </tr>
+        <tr>
+            <th scope="row">10</th>
+            <td>Ice Coffe</td>
+            <td>Cool Drinks</td>
+            <td>300</td>
+            <td>rs.300</td>
+        </tr>
+
+
+        </tbody>
+    </table>
+</main>
+
+<!--addOrder-->
+<main id="addOrder">
+    <!--img-->
+    <img  alt="" class="img-fluid   vh-100" style="width: 1449px; position: absolute" src="asserts/img/order.jpg">
+
+    <!--            title-->
+    <h1 class="text-center modal-title  " style="color:#012b05;top: 74px;position: absolute;right: 122px;
+ font-weight: bold; font-size:66px">Make Your Orders</h1>
+
+
+
+    <!--      save grid-->
+    <div class="d-block" style="max-width: 700px; height:640px;  background:#36883a ;
+position: absolute;top:96px; left:41px; width: 526px; ">
+        <form>
+            <div class="mb-3 w-25 " style="padding-left: 40px;color: white; font-weight: bold; padding-top: 15px;" >
+                <label for="InputOID" class="form-label">ID</label>
+                <input type="ID" class="form-control" id="InputOID">
+
+            </div>
+
+            <select class="form-select" id="CustomerSelect" aria-label="Floating label select example" style="top: 133px;
+    position: absolute; left: 37px; width: 187px;
+">
+
+                <option selected>Customer ID</option>
+                <option value="1">C001</option>
+                <option value="2">C002</option>
+                <option value="3">C003</option>
+            </select>
+            <label for="CustomerSelect" style="padding-left: 44px; color: #ffffff">Customer Id</label>
+
+            <select class="form-select" id="FoodSelect" aria-label="Floating label select example"style="top: 230px;
+    position: absolute; left: 37px; width: 187px;">
+                <option selected>Food ID</option>
+                <option value="1">F001</option>
+                <option value="2">F002</option>
+                <option value="3">F003</option>
+            </select>
+            <label for="FoodSelect"  style="left:38px;color: #ffffff; position: absolute;top: 196px;">Food Id</label>
+
+
+            <div class="mb-3  " style="padding-left: 37px; color:white;font-weight:bold;padding-top: 165px;width: 230px" >
+                <label for="InputOQty" class="form-label">Qty</label>
+                <input type="number" class="form-control" id="InputOQty">
+            </div>
+
+            <div class="mb-3 w-75 " style="padding-left: 40px; color:white;font-weight:bold;padding-top: 15px;" >
+                <label for="InputOPrice" class="form-label">Total</label>
+                <input type="type" class="form-control" id="InputOPrice">
+            </div>
+            <div class="mb-3 w-75 " style="padding-left: 40px; color:white;font-weight:bold;padding-top: 15px;" >
+                <label for="Inputdate" class="form-label">Date</label>
+                <input type="date" class="form-control" id="Inputdate">
+            </div>
+
+
+
+
+            <!--search-->
+            <div class="mb-3  " style="left: 306px;position: absolute; color:white;font-weight:bold;top:46px;width: 52px;" >
+                <input type="id" class="form-control" id="InputOrID">
+                <button class="btn " type="button " style="width: 165px; position: absolute; left: 53px; top: 0px;background: yellow;font-weight: bold">Search Food</button>
+            </div>
+
+            <!--save.dalete/update-->
+            <button class="btn btn-success" type="button " style="width: 140px; position: absolute; left: 30px;top:590px;">Save Food</button>
+            <button class="btn btn-danger" type="button" style="width: 100px;position: absolute;
+        width: 100px; position: absolute; left: 204px; top:590px;">Delete</button>
+            <button class="btn" type="button " style="width: 100px; position: absolute; background: orange;
+         color: white; font-weight: bold;left: 344px;top:590px;">Edit</button>
+        </form>
+    </div>
+
+
+    <table class="table table-bordered table-hover w-50 "  style="position: absolute; color: white;  left: 675px; top: 329px;
+background: #36883a ">
+
+        <thead style="background:#0f4020 ">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Customer ID</th>
+            <th scope="col">Food Id</th>
+            <th scope="col">QTY</th>
+            <th scope="col">Total</th>
+            <th scope="col">Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">O001</th>
+            <td>C001</td>
+            <td>F001</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+        <tr>
+            <th scope="row">O002</th>
+            <td>C002</td>
+            <td>F002</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+        <tr>
+            <th scope="row">O003</th>
+            <td>C001</td>
+            <td>F001</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+        <tr>
+            <th scope="row">O004</th>
+            <td>C001</td>
+            <td>F001</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+        <tr>
+            <th scope="row">O005</th>
+            <td>C001</td>
+            <td>F001</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+
+
+        </tbody>
+    </table>
+
+
+</main>
+
+<!--showOrders-->
+<main id="showOrders">
+
+    <!--img-->
+    <img  alt="" class="img-fluid   vh-100" style="width: 1347px; position: absolute" src="asserts/img/orderview.jpg">
+
+    <!--            title-->
+    <h1 class="text-center modal-title  " style="position: absolute ;color: #023502;font-size: 60px; left: 65px; font-weight: bold;">Orders</h1>
+
+
+
+    <table class="table table-bordered table-hover w-50 "  style="position: absolute; color: white;top: 0;
+ left: 0;bottom: 0; right: 0; margin: auto;
+ background:#36883a ">
+
+        <thead style="background:#0f4020 ">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Customer ID</th>
+            <th scope="col">Food Id</th>
+            <th scope="col">QTY</th>
+            <th scope="col">Total</th>
+            <th scope="col">Date</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <th scope="row">O001</th>
+            <td>C001</td>
+            <td>F001</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+        <tr>
+            <th scope="row">O002</th>
+            <td>C002</td>
+            <td>F002</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+        <tr>
+            <th scope="row">O003</th>
+            <td>C001</td>
+            <td>F001</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+        <tr>
+            <th scope="row">O004</th>
+            <td>C001</td>
+            <td>F001</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+        <tr>
+            <th scope="row">O005</th>
+            <td>C001</td>
+            <td>F001</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+        <tr>
+            <th scope="row">O006</th>
+            <td>C001</td>
+            <td>F001</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+        <tr>
+            <th scope="row">O007</th>
+            <td>C001</td>
+            <td>F001</td>
+            <td>2</td>
+            <td>rs.200</td>
+            <td>09/03/2020</td>
+
+        </tr>
+
+
+        </tbody>
+    </table>
+</main>
+
+<!--drinks-->
+<main id="drinks" style="background:white;height: 565px">
+
+    <!--            title-->
+    <h1 class="text-center modal-title  " style="color: #720e2a;position: absolute;
+right: 157px; font-weight: bold; font-size: 65px">Drinks</h1>
+
+    <!--img-->
+
+
+    <div class="col" style="height: 100px ;">
+        <div class="card h-25" style="width: 120px;top:172px;  left :51px;background: green">
+            <img src="asserts/img/drinks/peppsi.jpg" class="img-thumbnail" alt="Pepsi">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Pepsi</h1>
+            <p class="card-body text-center "style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 120px; top: 143px;left: 237px;background: green">
+            <img src="asserts/img/drinks/co.jpg" class="img-thumbnail" alt="Coca cola"style="height: 83px">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Cocacola</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 120px; top: 115px;left: 423px;background: green">
+            <img src="asserts/img/drinks/krushers.png" class="img-thumbnail" alt="krushers"style="height: 83px">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Krushers</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+
+        <div class="card h-25" style=";width: 130px; top: 89px;left: 609px;background: green">
+            <img src="asserts/img/drinks/Mojito.jpg" class="img-thumbnail" alt="Mojito" style="height: 85px"  >
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Mojito</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+
+        <div class="card h-25" style=";width: 120px; top: 63px;left: 795px;background: green">
+            <img src="asserts/img/drinks/cocktails.jpg" class="img-thumbnail" alt="Cocktails"style="height: 90px" >
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Cocktails</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+
+        <div class="card h-25" style=";width: 135px; top: 35px;left: 981px;background: green">
+            <img src="asserts/img/drinks/Fruit.jpg" class="img-thumbnail" alt="Fruit juice" style="height: 89px">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Fruit juice</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 135px;top:10px">Select</button>
+        </div>
+
+        <div class="card h-25" style=";width: 150px;top:8px; left: 1175px;background: green">
+            <img src="asserts/img/drinks/cappuccino.jpg" class="img-thumbnail" alt="Cappuccino"style="height: 83px;">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px ;"> Cappuccino</h1>
+            <p class="card-body text-center"style="height: 10px;">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 150px;top:10px;">Select</button>
+        </div>
+    </div>
+
+
+    <img alt="" class="img-fluid   " style="width: 243px;height: 184px;right: 0;
+bottom: 0;position: absolute;" src="asserts/img/drinks/o.png">
+    <img alt="" class="img-fluid   " style="width: 297px ;height: 183px;left: 0;
+bottom: 0;position: absolute;" src="asserts/img/drinks/REvive-Drink.png">
+    <img alt="" class="img-fluid   " style="width: 140px;height: 115px;left: 0;top: 80px;
+position: absolute;" src="asserts/img/drinks/i.png">
+
+</main>
+<!--Rice-->
+<main style="background:white;height: 583px" id="Rice">
+
+
+    <!--            title-->
+    <h1 class="text-center modal-title  " style="color: #0e7262;position: absolute;
+right: 157px; font-weight: bold; font-size: 65px">Fried Rice</h1>
+
+    <!--img-->
+
+
+    <div class="col" style="height: 100px ;">
+        <div class="card h-25" style="width: 120px;top:172px;  left :51px;background: green">
+            <img src="asserts/img/rice/chi_rice.jpg" class="img-thumbnail" alt="Chicken fried rice">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Chicken fried rice</h1>
+            <p class="card-body text-center "style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 120px; top: 152px;left: 237px;background: green">
+            <img src="asserts/img/rice/egg_ric.jpg" class="img-thumbnail" alt="Egg fried rice">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Egg fried rice</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 120px; top: 127px;left: 423px;background: green">
+            <img src="asserts/img/rice/sea_rice.jpg" class="img-thumbnail" alt="SeaFood fried rice"style="height: 89px">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">SeaFood fried rice</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 130px; top: 100px;left: 609px;background: green">
+            <img src="asserts/img/rice/vegiterian_rice.jpg" class="img-thumbnail" alt="Vegetable fried rice" style="height: 89px">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Vegetable fried rice</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 120px; top: 74px;left: 795px;background: green">
+            <img src="asserts/img/rice/pork.jpg" class="img-thumbnail" alt="Pork fried rice" style=" height: 89px">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Pork fried rice</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 120px; top: 51px;left: 981px;background: green">
+            <img src="asserts/img/rice/nasi.jpg" class="img-thumbnail" alt="Nasi goreng" style="height: 89px">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Nasi goreng</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 120px;top:22px; left: 1175px;background: green">
+            <img src="asserts/img/rice/beef.jpg" class="img-thumbnail" alt="Beef fried rice"style="height: 78px;">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px ;"> Beef fried rice</h1>
+            <p class="card-body text-center"style="height: 10px;">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px;">Select</button>
+        </div>
+    </div>
+
+
+    <img alt="" class="img-fluid   " style="width: 356px;height: 173px;right: 0;bottom: 0;position: absolute;" src="asserts/img/rice/crop.png">
+    <img alt="" class="img-fluid   " style="width: 356px;height: 158px;left: 0;bottom: 0;position: absolute;" src="asserts/img/rice/crops.jpg">
+    <img alt="" class="img-fluid   " style="width: 220px;height: 170px;left: 0;top:71px;position: absolute;" src="asserts/img/rice/c.jpg">
+
+
+
+
+</main>
+<!--otherFood-->
+<main style="background:white;height:587px" id="OtherFood">
+
+
+    <!--            title-->
+    <h1 class="text-center modal-title  " style="color: #540e72;position: absolute;
+right: 157px; font-weight: bold; font-size: 65px">Food</h1>
+
+    <!--img-->
+
+
+    <div class="col" style="height: 100px ;">
+        <div class="card h-25" style="width: 120px;top:172px;  left :51px;background: green">
+            <img src="asserts/img/otherFood/bu.jpg" class="img-thumbnail" alt="Burger">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Burger</h1>
+            <p class="card-body text-center "style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 120px; top: 143px;left: 237px;background: green">
+            <img src="asserts/img/otherFood/pizza.jpg" class="img-thumbnail" alt="Pizza"style="height: 83px">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Pizza</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 120px; top: 115px;left: 423px;background: green">
+            <img src="asserts/img/otherFood/Pasta.jpg" class="img-thumbnail" alt="Pasta"style="height: 83px">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Pasta</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 130px; top: 89px;left: 609px;background: green">
+            <img src="asserts/img/otherFood/Donuts.jpg" class="img-thumbnail" alt="Donuts" >
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Donuts</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 120px; top: 63px;left: 795px;background: green">
+            <img src="asserts/img/otherFood/Chips.jpg" class="img-thumbnail" alt="Chips"style="height: 90px" >
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Chips</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 135px; top: 35px;left: 981px;background: green">
+            <img src="asserts/img/otherFood/Submarine.jpg" class="img-thumbnail" alt="Submarine" style="height: 89px">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px">Submarine</h1>
+            <p class="card-body text-center"style="height: 10px">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px">Select</button>
+        </div>
+        <div class="card h-25" style=";width: 130px;top:8px; left: 1175px;background: green">
+            <img src="asserts/img/otherFood/Sandwich.jpg" class="img-thumbnail" alt="Sandwich"style="height: 83px;">
+            <h1 class="card-header text-center"style="color: #0a53be;font-size: 20px ;"> Sandwich</h1>
+            <p class="card-body text-center"style="height: 10px;">Rs.800 </p>
+            <button class="card-footer btn btn-danger"style="color: black;width: 120px;top:10px;">Select</button>
+        </div>
+    </div>
+
+
+    <img alt="" class="img-fluid   " style="width: 356px;height: 204px;right: 0;
+bottom: 0;position: absolute;" src="asserts/img/otherFood/h.png">
+    <img alt="" class="img-fluid   " style="width: 308px;height: 186px;left: 0;
+bottom: 0;position: absolute;" src="asserts/img/otherFood/u.jpg">
+    <img alt="" class="img-fluid   " style="width: 200px;height: 170px;left: 0;top: 65px;
+position: absolute;" src="asserts/img/otherFood/f.png">
+
+</main>
+<script>
+     var dashboard= document.getElementById("dash");
+     var customerSave=document.getElementById("customerSave");
+     var allcustomer=document.getElementById("AllCust");
+     var allItem=document.getElementById("allItem");
+     var itemSave=document.getElementById("ItemSave");
+     var addOrder=document.getElementById("addOrder");
+     var showOrders=document.getElementById("showOrders");
+     var drinks=document.getElementById("drinks");
+     var Rice=document.getElementById("Rice");
+     var OtherFood=document.getElementById("OtherFood");
+
+
+
+     customerSave.style.display='none';
+     allcustomer.style.display='none';
+     OtherFood.style.display='none';
+     allItem.style.display='none';
+     itemSave.style.display='none';
+     addOrder.style.display='none';
+     showOrders.style.display='none';
+     drinks.style.display='none';
+     Rice.style.display='none';
+     dashboard.style.display='block';
+
+  var homepage=document.getElementById("home");
+  homepage.addEventListener('click',function () {
+      customerSave.style.display='none';
+      allcustomer.style.display='none';
+      allItem.style.display='none';
+      itemSave.style.display='none';
+      drinks.style.display='none';
+      Rice.style.display='none';
+      OtherFood.style.display='none';
+      dashboard.style.display='block';
+
+
+  });
+
+     var inputSaveCustomer=document.getElementById("inputSaveCustomer");
+     inputSaveCustomer.addEventListener('click',function () {
+         allcustomer.style.display='none';
+         allItem.style.display='none';
+         itemSave.style.display='none';
+         drinks.style.display='none';
+         Rice.style.display='none';
+         OtherFood.style.display='none';
+         dashboard.style.display='none';
+         customerSave.style.display='block';
+     });
+
+     var allcust=document.getElementById("ShowCustomer");
+     allcust.addEventListener('click',function () {
+         customerSave.style.display='none';
+         allItem.style.display='none';
+         Rice.style.display='none';
+         OtherFood.style.display='none';
+         itemSave.style.display='none';
+         dashboard.style.display='none';
+         drinks.style.display='none';
+         allcustomer.style.display='block';
+
+     });
+
+     var allitem=document.getElementById("showItem");
+     allitem.addEventListener('click',function () {
+         customerSave.style.display='none';
+         allcustomer.style.display='none';
+         Rice.style.display='none';
+         itemSave.style.display='none';
+         OtherFood.style.display='none';
+         drinks.style.display='none';
+         dashboard.style.display='none';
+         allItem.style.display='block';
+
+     });
+
+     var inputSaveItem=document.getElementById("inputSaveItem");
+     inputSaveItem.addEventListener('click',function () {
+         customerSave.style.display='none';
+         Rice.style.display='none';
+         allcustomer.style.display='none';
+         drinks.style.display='none';
+         OtherFood.style.display='none';
+         allItem.style.display='none';
+         dashboard.style.display='none';
+         itemSave.style.display='block';
+     });
+
+     var inputOrder =document.getElementById("inputOrder");
+     inputOrder.addEventListener('click',function () {
+         customerSave.style.display='none';
+         allcustomer.style.display='none';
+         allItem.style.display='none';
+         dashboard.style.display='none';
+         itemSave.style.display='none';
+         drinks.style.display='none';
+         OtherFood.style.display='none';
+         Rice.style.display='none';
+        addOrder.style.display='block';
+     });
+
+     var showOrder =document.getElementById("showOrder");
+     showOrder.addEventListener('click',function () {
+         customerSave.style.display='none';
+         allcustomer.style.display='none';
+         allItem.style.display='none';
+         Rice.style.display='none';
+         dashboard.style.display='none';
+         OtherFood.style.display='none';
+         itemSave.style.display='none';
+         addOrder.style.display='none';
+         drinks.style.display='none';
+         showOrders.style.display='block';
+     });
+
+
+   var viewDrinks=  document.getElementById("viewDrinks");
+     viewDrinks.addEventListener('click',function () {
+         customerSave.style.display='none';
+         allcustomer.style.display='none';
+         OtherFood.style.display='none';
+         allItem.style.display='none';
+         Rice.style.display='none';
+         dashboard.style.display='none';
+         itemSave.style.display='none';
+         addOrder.style.display='none';
+         showOrders.style.display='none';
+         drinks.style.display='block';
+     });
+
+     var viewRice=  document.getElementById("viewRice");
+     viewRice.addEventListener('click',function () {
+         customerSave.style.display='none';
+         allcustomer.style.display='none';
+         allItem.style.display='none';
+         dashboard.style.display='none';
+         itemSave.style.display='none';
+         addOrder.style.display='none';
+         showOrders.style.display='none';
+         drinks.style.display='none';
+         OtherFood.style.display='none';
+         Rice.style.display='block';
+     });
+
+     var viewOtherFood=  document.getElementById("viewOthers");
+     viewOtherFood.addEventListener('click',function () {
+         customerSave.style.display='none';
+         allcustomer.style.display='none';
+         allItem.style.display='none';
+         dashboard.style.display='none';
+         itemSave.style.display='none';
+         addOrder.style.display='none';
+         showOrders.style.display='none';
+         drinks.style.display='none';
+         Rice.style.display='none';
+         OtherFood.style.display='block';
+     });
+</script>
+
+<script src="asserts/js/bootstrap.js"></script>
+
+</body>
+
+
+
+</html>
+
+
+
